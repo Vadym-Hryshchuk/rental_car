@@ -14,7 +14,6 @@ import { ReactComponent as Normal } from "../../icons/normal.svg";
 export const ListItem = ({ value }) => {
   const [isActive, setIsActive] = useState(false);
   const test = (e) => {
-    // console.dir(e);
     setIsActive((isActive) => !isActive);
     console.log(isActive);
   };
