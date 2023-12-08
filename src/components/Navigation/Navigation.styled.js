@@ -19,7 +19,7 @@ export const StyledNavLink = styled(NavLink)`
 
   padding: 12px;
   border-radius: 12px;
-  background: #3470ff;
+  background: rgb(52, 112, 255, 0.9);
 
   color: white;
   text-align: center;
