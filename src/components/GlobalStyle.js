@@ -23,7 +23,8 @@ export const GlobalStyle = createGlobalStyle`
 
   img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   p {margin:0;
@@ -33,5 +34,10 @@ export const GlobalStyle = createGlobalStyle`
     color: inherit;
     text-decoration: none;
     font-family: inherit;
+  }
+  button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
   }
 `;

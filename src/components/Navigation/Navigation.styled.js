@@ -8,6 +8,7 @@ export const Container = styled.div`
 `;
 export const Header = styled.header`
   height: 90px;
+  margin-bottom: 50px;
   border-radius: 14px;
   background: #f7f7fb;
 `;
@@ -16,13 +17,13 @@ export const StyledNavLink = styled(NavLink)`
   display: inline-block;
   width: 136px;
 
-  padding: 14px;
+  padding: 12px;
   border-radius: 12px;
   background: #3470ff;
 
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
 
   &.active {
     color: #3470ff;
