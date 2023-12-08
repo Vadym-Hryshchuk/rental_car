@@ -1,16 +1,17 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import { Container, Header, StyledNavLink } from "./Navigation.styled.js";
 
 export const Navigation = () => {
   return (
-    <div>
-      <header>
+    <Container>
+      <Header>
         <nav>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/catalog">Catalog</NavLink>
-          <NavLink to="/favorites">Favorites</NavLink>
+          <StyledNavLink to="/">Home</StyledNavLink>
+          <StyledNavLink to="/catalog">Catalog</StyledNavLink>
+          <StyledNavLink to="/favorites">Favorites</StyledNavLink>
         </nav>
-      </header>
+      </Header>
       <Outlet />
-    </div>
+    </Container>
   );
 };

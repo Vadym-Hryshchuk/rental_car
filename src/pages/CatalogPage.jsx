@@ -1,10 +1,9 @@
-import data from "../advertsCars.json";
-console.log(data[0].address.split(",").slice(1, 2).join(" | "));
+// console.log(data[0].address.split(",").slice(1, 2).join(""));
+
+import { CatalogList } from "../components/CatalogList/CatalogList";
 
 const CatalogPage = () => {
-  return data.map((value) => {
-    return <p key={value.id}>{value.make}</p>;
-  });
+  return <CatalogList />;
 };
 
 export default CatalogPage;

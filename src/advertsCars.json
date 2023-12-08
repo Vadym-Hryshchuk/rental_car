@@ -1,6 +1,5 @@
 [
   {
-    "id": 9582,
     "year": 2008,
     "make": "Buick",
     "model": "Enclave",
@@ -23,10 +22,10 @@
     "rentalCompany": "Luxury Car Rentals",
     "address": "123 Example Street, Kiev, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-    "mileage": 5858
+    "mileage": 5858,
+    "id": "1"
   },
   {
-    "id": 9584,
     "year": 2019,
     "make": "Volvo",
     "model": "XC90",
@@ -49,10 +48,10 @@
     "rentalCompany": "Premium Auto Rentals",
     "address": "456 Example Avenue, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nProof of insurance required",
-    "mileage": 5352
+    "mileage": 5352,
+    "id": "2"
   },
   {
-    "id": 9586,
     "year": 2020,
     "make": "Volvo",
     "model": "XC60",
@@ -75,10 +74,10 @@
     "rentalCompany": "Luxury Car Rentals",
     "address": "789 Example Boulevard, Odessa, Ukraine",
     "rentalConditions": "Minimum age: 23\nValid driver's license\nCredit card required",
-    "mileage": 5966
+    "mileage": 5966,
+    "id": "3"
   },
   {
-    "id": 9587,
     "year": 2006,
     "make": "HUMMER",
     "model": "H2",
@@ -87,11 +86,7 @@
     "description": "The HUMMER H2 is a rugged and powerful SUV that stands out with its imposing presence and off-road capabilities.",
     "fuelConsumption": "19.8",
     "engineSize": "6.0L V8",
-    "accessories": [
-      "Heated leather seats",
-      "Bose premium sound system",
-      "Off-road package"
-    ],
+    "accessories": ["Heated leather seats", "Bose premium sound system"],
     "functionalities": [
       "Electronic locking front and rear differentials",
       "Stabilitrak stability control",
@@ -101,10 +96,10 @@
     "rentalCompany": "Adventure Car Rentals",
     "address": "321 Example Road, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-    "mileage": 4771
+    "mileage": 4771,
+    "id": "4"
   },
   {
-    "id": 9590,
     "year": 2016,
     "make": "Subaru",
     "model": "Outback",
@@ -127,10 +122,10 @@
     "rentalCompany": "Adventure Car Rentals",
     "address": "987 Example Street, Kyiv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nCredit card required",
-    "mileage": 4061
+    "mileage": 4061,
+    "id": "5"
   },
   {
-    "id": 9591,
     "year": 2010,
     "make": "Mitsubishi",
     "model": "Outlander",
@@ -153,10 +148,10 @@
     "rentalCompany": "City Car Rentals",
     "address": "654 Example Avenue, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nProof of insurance required",
-    "mileage": 5374
+    "mileage": 5374,
+    "id": "6"
   },
   {
-    "id": 9593,
     "year": 2014,
     "make": "Nissan",
     "model": "Pathfinder",
@@ -179,10 +174,10 @@
     "rentalCompany": "Luxury Car Rentals",
     "address": "321 Example Road, Odessa, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-    "mileage": 6282
+    "mileage": 6282,
+    "id": "7"
   },
   {
-    "id": 9596,
     "year": 2009,
     "make": "Lincoln",
     "model": "Navigator L",
@@ -205,10 +200,10 @@
     "rentalCompany": "Elite Car Rentals",
     "address": "123 Example Boulevard, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nInsurance coverage required",
-    "mileage": 6173
+    "mileage": 6173,
+    "id": "8"
   },
   {
-    "id": 9597,
     "year": 2000,
     "make": "GMC",
     "model": "Yukon Denali",
@@ -231,10 +226,10 @@
     "rentalCompany": "Premium Car Rentals",
     "address": "789 Example Square, Dnipro, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-    "mileage": 4989
+    "mileage": 4989,
+    "id": "9"
   },
   {
-    "id": 9598,
     "year": 2007,
     "make": "Hyundai",
     "model": "Tucson",
@@ -257,10 +252,10 @@
     "rentalCompany": "Economy Car Rentals",
     "address": "456 Example Lane, Zaporizhzhia, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nCredit card required",
-    "mileage": 4591
+    "mileage": 4591,
+    "id": "10"
   },
   {
-    "id": 9583,
     "year": 2006,
     "make": "MINI",
     "model": "Convertible",
@@ -283,10 +278,10 @@
     "rentalCompany": "Fun Car Rentals",
     "address": "234 Example Place, Vinnytsia, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nProof of insurance required",
-    "mileage": 6275
+    "mileage": 6275,
+    "id": "11"
   },
   {
-    "id": 9606,
     "year": 2007,
     "make": "Bentley",
     "model": "Azure",
@@ -309,10 +304,10 @@
     "rentalCompany": "Luxury Car Rentals",
     "address": "567 Example Street, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 30\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 4317
+    "mileage": 4317,
+    "id": "12"
   },
   {
-    "id": 9612,
     "year": 2004,
     "make": "Mercedes-Benz",
     "model": "SL-Class",
@@ -335,10 +330,10 @@
     "rentalCompany": "Exquisite Car Rentals",
     "address": "789 Example Boulevard, Kyiv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and proof of insurance required",
-    "mileage": 5722
+    "mileage": 5722,
+    "id": "13"
   },
   {
-    "id": 9616,
     "year": 2010,
     "make": "Aston Martin",
     "model": "DBS",
@@ -361,10 +356,10 @@
     "rentalCompany": "Supreme Car Rentals",
     "address": "123 Example Avenue, Odessa, Ukraine",
     "rentalConditions": "Minimum age: 30\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6464
+    "mileage": 6464,
+    "id": "14"
   },
   {
-    "id": 9619,
     "year": 1996,
     "make": "Pontiac",
     "model": "Firebird",
@@ -387,10 +382,10 @@
     "rentalCompany": "Classic Car Rentals",
     "address": "456 Example Street, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
-    "mileage": 5091
+    "mileage": 5091,
+    "id": "15"
   },
   {
-    "id": 9629,
     "year": 2009,
     "make": "Lamborghini",
     "model": "Murcielago",
@@ -413,10 +408,10 @@
     "rentalCompany": "Supercar Rentals",
     "address": "321 Example Road, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 30\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 5832
+    "mileage": 5832,
+    "id": "16"
   },
   {
-    "id": 9631,
     "year": 2011,
     "make": "Audi",
     "model": "A5",
@@ -439,10 +434,10 @@
     "rentalCompany": "Luxury Car Rentals",
     "address": "987 Example Lane, Dnipro, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 4635
+    "mileage": 4635,
+    "id": "17"
   },
   {
-    "id": 9634,
     "year": 2001,
     "make": "BMW",
     "model": "Z8",
@@ -465,10 +460,10 @@
     "rentalCompany": "Classic Car Rentals",
     "address": "654 Example Circle, Zaporizhzhia, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and proof of insurance required",
-    "mileage": 5990
+    "mileage": 5990,
+    "id": "18"
   },
   {
-    "id": 9655,
     "year": 1998,
     "make": "Chevrolet",
     "model": "Camaro",
@@ -491,10 +486,10 @@
     "rentalCompany": "Muscle Car Rentals",
     "address": "123 Example Street, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6330
+    "mileage": 6330,
+    "id": "19"
   },
   {
-    "id": 9685,
     "year": 2006,
     "make": "Mercedes-Benz",
     "model": "SLK-Class",
@@ -517,15 +512,15 @@
     "rentalCompany": "Luxury Car Rentals",
     "address": "456 Example Avenue, Kyiv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6280
+    "mileage": 6280,
+    "id": "20"
   },
   {
-    "id": 9660,
     "year": 2020,
     "make": "Chrysler",
     "model": "Voyager",
     "type": "Van/Minivan",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/chrysler_voyager.jpg",
+    "img": "https://loremflickr.com/640/480",
     "description": "The Chrysler Voyager is a practical and versatile van/minivan that provides comfortable seating, ample cargo space, and a range of convenient features for family-oriented transportation.",
     "fuelConsumption": "8.2",
     "engineSize": "3.6L V6",
@@ -543,15 +538,16 @@
     "rentalCompany": "Family Car Rentals",
     "address": "789 Example Boulevard, Odesa, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 5807
+    "mileage": 5807,
+    "id": "21",
+    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/chrysler_voyager.jpg"
   },
   {
-    "id": 9630,
     "year": 2020,
     "make": "Kia",
     "model": "Rio",
     "type": "Hatchback",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_hatchback.jpg",
+    "img": "https://loremflickr.com/640/480",
     "description": "The Kia Rio is a compact and fuel-efficient hatchback that offers a blend of affordability, reliability, and practicality, making it an excellent choice for urban commuting and everyday driving.",
     "fuelConsumption": "6.2",
     "engineSize": "1.6L 4-cylinder",
@@ -569,15 +565,16 @@
     "rentalCompany": "Economy Car Rentals",
     "address": "321 Example Lane, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 4618
+    "mileage": 4618,
+    "id": "22",
+    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_hatchback.jpg"
   },
   {
-    "id": 9633,
     "year": 2020,
     "make": "Volvo",
     "model": "XC60",
     "type": "SUV",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/volvo_xc60_2.jpg",
+    "img": "https://loremflickr.com/640/480",
     "description": "The Volvo XC60 is a luxurious and versatile SUV that combines Scandinavian design, advanced safety features, and a comfortable driving experience, making it an ideal choice for families and adventure enthusiasts.",
     "fuelConsumption": "8.5",
     "engineSize": "2.0L 4-cylinder",
@@ -595,15 +592,16 @@
     "rentalCompany": "Premium Car Rentals",
     "address": "987 Example Road, Dnipro, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6618
+    "mileage": 6618,
+    "id": "23",
+    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/volvo_xc60_2.jpg"
   },
   {
-    "id": 9618,
     "year": 2020,
     "make": "Land Rover",
     "model": "Range Rover Sport",
     "type": "SUV",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/land_rover_range_rover_sport.jpg",
+    "img": "https://loremflickr.com/640/480",
     "description": "The Land Rover Range Rover Sport is a premium SUV that offers a perfect blend of luxury, off-road capability, and dynamic performance, providing a refined driving experience both on and off the road.",
     "fuelConsumption": "11.8",
     "engineSize": "3.0L V6",
@@ -621,15 +619,16 @@
     "rentalCompany": "Luxury SUV Rentals",
     "address": "654 Example Street, Lviv, Ukraine",
     "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 4856
+    "mileage": 4856,
+    "id": "24",
+    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/land_rover_range_rover_sport.jpg"
   },
   {
-    "id": 9632,
     "year": 2020,
     "make": "Kia",
     "model": "Rio",
     "type": "Sedan, Hatchback",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_sedan_hatchback.jpg",
+    "img": "https://loremflickr.com/640/480",
     "description": "The Kia Rio is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
     "fuelConsumption": "6.2",
     "engineSize": "1.6L 4-cylinder",
@@ -647,6 +646,192 @@
     "rentalCompany": "Economy Car Rentals",
     "address": "321 Example Lane, Kharkiv, Ukraine",
     "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6234
+    "mileage": 6234,
+    "id": "25",
+    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_sedan_hatchback.jpg"
+  },
+  {
+    "year": 2022,
+    "make": "Skoda",
+    "model": "Karoq",
+    "type": "SUV",
+    "img": "https://loremflickr.com/640/480",
+    "description": "The Skoda Karoq is a versatile and fuel-efficient vehicle available in both SUV body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
+    "fuelConsumption": "6.2",
+    "engineSize": "1.6L 4-cylinder",
+    "accessories": [
+      "Apple CarPlay and Android Auto integration",
+      "Smart Key with Push Button Start",
+      "Automatic climate control"
+    ],
+    "functionalities": [
+      "Front-Wheel Drive",
+      "Electronic Stability Control",
+      "Rearview camera"
+    ],
+    "rentalPrice": "$40",
+    "rentalCompany": "Economy Car Rentals",
+    "address": "321 Example Lane, Irpin, Ukraine",
+    "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
+    "mileage": 4000,
+    "id": "26",
+    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_sedan_hatchback.jpg"
+  },
+  {
+    "year": 2021,
+    "make": "Skoda",
+    "model": "Kodiaq",
+    "type": "SUV",
+    "img": "https://loremflickr.com/640/480",
+    "description": "The Skoda Kodiaq is a versatile and fuel-efficient vehicle available in both SUV body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
+    "fuelConsumption": "6.5",
+    "engineSize": "2.0L 4-cylinder",
+    "accessories": [
+      "Apple CarPlay and Android Auto integration",
+      "Smart Key with Push Button Start",
+      "Automatic climate control"
+    ],
+    "functionalities": [
+      "Front-Wheel Drive",
+      "Electronic Stability Control",
+      "Rearview camera"
+    ],
+    "rentalPrice": "$60",
+    "rentalCompany": "Economy Car Rentals",
+    "address": "321 Example Lane, Irpin, Ukraine",
+    "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
+    "mileage": 3500,
+    "id": "27",
+    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_sedan_hatchback.jpg"
+  },
+  {
+    "year": 2015,
+    "make": "Buick",
+    "model": "Enclave",
+    "type": "SUV",
+    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/buick_enclave.jpg",
+    "description": "The Buick Enclave is a stylish and spacious SUV known for its comfortable ride and luxurious features.",
+    "fuelConsumption": "10.5",
+    "engineSize": "3.6L V6",
+    "accessories": [
+      "Leather seats",
+      "Panoramic sunroof",
+      "Premium audio system"
+    ],
+    "functionalities": [
+      "Power liftgate",
+      "Remote start",
+      "Blind-spot monitoring"
+    ],
+    "rentalPrice": "$30",
+    "rentalCompany": "Luxury Car Rentals",
+    "address": "123 Example Street, Odessa, Ukraine",
+    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
+    "mileage": 7120,
+    "id": "28"
+  },
+  {
+    "year": 2006,
+    "make": "TOYOTA",
+    "model": "PRADO",
+    "type": "SUV",
+    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/hummer_h2.webp",
+    "description": "The TOYOTA PRADO is a rugged and powerful SUV that stands out with its imposing presence and off-road capabilities.",
+    "fuelConsumption": "15.0",
+    "engineSize": "3.0L V8",
+    "accessories": [
+      "Heated leather seats",
+      "Bose premium sound system",
+      "Off-road package"
+    ],
+    "functionalities": [
+      "Electronic locking front and rear differentials",
+      "Stabilitrak stability control",
+      "Tire pressure monitoring system"
+    ],
+    "rentalPrice": "$55",
+    "rentalCompany": "Adventure Car Rentals",
+    "address": "321 Example Road, Kiev, Ukraine",
+    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit required",
+    "mileage": 4771,
+    "id": "29"
+  },
+  {
+    "year": 2019,
+    "make": "HONDA",
+    "model": "Civic",
+    "type": "SUV",
+    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/subaru_outback.jpg",
+    "description": "The Honda Civic is a versatile and reliable SUV that combines off-road capability with a comfortable and spacious interior.",
+    "fuelConsumption": "7.0",
+    "engineSize": "3.0L 4-cylinder",
+    "accessories": [
+      "Leather upholstery",
+      "Power moonroof",
+      "Harman Kardon premium audio system"
+    ],
+    "functionalities": [
+      "Symmetrical All-Wheel Drive",
+      "X-Mode off-road assist",
+      "Subaru EyeSight driver-assist system"
+    ],
+    "rentalPrice": "$35",
+    "rentalCompany": "Adventure Car Rentals",
+    "address": "987 Example Street, Kyiv, Ukraine",
+    "rentalConditions": "Minimum age: 21\nValid driver's license\nCredit card required",
+    "mileage": 5200,
+    "id": "30"
+  },
+  {
+    "year": 2018,
+    "make": "Mitsubishi",
+    "model": "Outlander",
+    "type": "SUV",
+    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/mitsubishi_outlander.jpg",
+    "description": "The Mitsubishi Outlander is a practical and fuel-efficient SUV with a stylish design and a range of modern features.",
+    "fuelConsumption": "7.5",
+    "engineSize": "3.0L 4-cylinder",
+    "accessories": [
+      "Heated front seats",
+      "Rockford Fosgate premium audio system",
+      "Power liftgate"
+    ],
+    "functionalities": [
+      "Super All-Wheel Control",
+      "Multi-View camera system",
+      "Bluetooth hands-free system"
+    ],
+    "rentalPrice": "$50",
+    "rentalCompany": "City Car Rentals",
+    "address": "654 Example Avenue, Lviv, Ukraine",
+    "rentalConditions": "Minimum age: 21\nValid driver's license\nProof of insurance required",
+    "mileage": 3520,
+    "id": "31"
+  },
+  {
+    "year": 2016,
+    "make": "Lincoln",
+    "model": "Navigator L",
+    "type": "SUV",
+    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/lincoln_navigator_l.webp",
+    "description": "The Lincoln Navigator L is a luxurious and spacious SUV with a refined interior and advanced technology features.",
+    "fuelConsumption": "16.2",
+    "engineSize": "4.5L V8",
+    "accessories": [
+      "Premium leather seats",
+      "THX II Certified audio system",
+      "Power-deployable running boards"
+    ],
+    "functionalities": [
+      "AdvanceTrac with Roll Stability Control",
+      "Voice-Activated Navigation System",
+      "Power liftgate"
+    ],
+    "rentalPrice": "$90",
+    "rentalCompany": "Elite Car Rentals",
+    "address": "123 Example Boulevard, Kharkiv, Ukraine",
+    "rentalConditions": "Minimum age: 25\nValid driver's license\nInsurance coverage required",
+    "mileage": 4360,
+    "id": "32"
   }
 ]
