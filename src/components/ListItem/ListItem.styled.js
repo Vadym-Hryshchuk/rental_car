@@ -1,10 +1,17 @@
 import styled from "styled-components";
 
 export const ImageWrapper = styled.div`
+  position: relative;
   height: 268px;
   border-radius: 14px;
   margin-bottom: 14px;
   overflow: hidden;
+  button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: none;
+  }
 `;
 
 export const Title = styled.p`
