@@ -12,7 +12,9 @@ export const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
 
   }
-
+h1,h2,h3,h4 {
+  margin:0;
+   padding: 0}
 
 
   ul {

@@ -1,9 +1,7 @@
+import { GreetPage } from "components/GreetPage/GreetPage";
+
 const HomePage = () => {
-  return (
-    <div>
-      <p>"Home Page"</p>
-    </div>
-  );
+  return <GreetPage />;
 };
 
 export default HomePage;

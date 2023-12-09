@@ -1,15 +1,27 @@
 import { Outlet } from "react-router-dom";
-import { Container, Header, StyledNavLink } from "./Navigation.styled.js";
+import { ReactComponent as Logo } from "icons/logo.svg";
+import {
+  Container,
+  Header,
+  Navigate,
+  StyledLink,
+  StyledNavLink,
+} from "./Navigation.styled.js";
 
 export const Navigation = () => {
   return (
     <Container>
       <Header>
-        <nav>
-          <StyledNavLink to="/">Home</StyledNavLink>
-          <StyledNavLink to="/catalog">Catalog</StyledNavLink>
-          <StyledNavLink to="/favorites">Favorites</StyledNavLink>
-        </nav>
+        <Navigate>
+          <StyledLink to="/">
+            <Logo width="100%" height="100%" />
+          </StyledLink>
+          <div>
+            <StyledNavLink to="/">Home</StyledNavLink>
+            <StyledNavLink to="/catalog">Catalog</StyledNavLink>
+            <StyledNavLink to="/favorites">Favorites</StyledNavLink>
+          </div>
+        </Navigate>
       </Header>
       <Outlet />
     </Container>

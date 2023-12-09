@@ -1,4 +1,4 @@
-import { useState } from "react"; // Це тимчасово, потрыбно видалити
+import { useState } from "react"; // Це тимчасово, потрібно видалити
 import { LearnMoreBtn } from "../button/LearnMoreBtn/LearnMoreBtn";
 import {
   DescriptWrapper,
