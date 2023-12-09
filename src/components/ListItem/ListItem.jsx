@@ -1,5 +1,5 @@
-import { useState } from "react"; // Це тимчасово, потрібно видалити
-import { LearnMoreBtn } from "../button/LearnMoreBtn/LearnMoreBtn";
+import { useState } from 'react'; // Це тимчасово, потрібно видалити
+import { LearnMoreBtn } from '../button/LearnMoreBtn/LearnMoreBtn';
 import {
   DescriptWrapper,
   Description,
@@ -7,18 +7,21 @@ import {
   ImageWrapper,
   Make,
   Title,
-} from "./ListItem.styled";
-import { ReactComponent as Active } from "../../icons/active.svg";
-import { ReactComponent as Normal } from "../../icons/normal.svg";
+} from './ListItem.styled';
+import { ReactComponent as Active } from '../../icons/active.svg';
+import { ReactComponent as Normal } from '../../icons/normal.svg';
+import { ModalAdverts } from 'components/Modal/Modal';
+import { ModalContent } from 'components/Modal/ModalContent';
+import { createAddress } from 'utils/createAddress';
 
 export const ListItem = ({ value }) => {
+  const [isOpen, setIsOpen] = useState(false);
   const [isActive, setIsActive] = useState(false);
-  const test = (e) => {
-    setIsActive((isActive) => !isActive);
-    console.log(isActive);
+  const test = e => {
+    setIsActive(isActive => !isActive);
   };
-  const city = value.address.split(",").slice(1, 2).join("").trim();
-  const country = value.address.split(",").slice(2).join("").trim();
+  const city = createAddress(value, 0);
+  const country = createAddress(value, 1);
   return (
     <>
       <ImageWrapper>
@@ -44,7 +47,20 @@ export const ListItem = ({ value }) => {
           </Descriptions>
         </DescriptWrapper>
       </div>
-      <LearnMoreBtn />
+      <LearnMoreBtn
+        onClick={() => {
+          setIsOpen(true);
+        }}
+      />
+
+      <ModalAdverts
+        onOpen={isOpen}
+        onClose={() => {
+          setIsOpen(false);
+        }}
+      >
+        <ModalContent content={value} />
+      </ModalAdverts>
     </>
   );
 };

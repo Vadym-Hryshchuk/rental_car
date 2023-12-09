@@ -1,5 +1,9 @@
-import { Button } from "./LearnMoreBtn.styled";
+import { Button } from './LearnMoreBtn.styled';
 
-export const LearnMoreBtn = () => {
-  return <Button type="button">Learn more</Button>;
+export const LearnMoreBtn = ({ onClick }) => {
+  return (
+    <Button type="button" onClick={onClick}>
+      Learn more
+    </Button>
+  );
 };

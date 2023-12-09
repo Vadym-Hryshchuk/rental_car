@@ -1,0 +1,63 @@
+import styled from 'styled-components';
+
+export const ModalContentStyled = styled.div`
+  position: relative;
+  width: 541px;
+  height: 752px;
+  margin: 0;
+  padding: 40px;
+
+  img {
+    height: 248px;
+    border-radius: 14px;
+    margin-bottom: 14px;
+    object-position: 30% 70%;
+  }
+`;
+export const Title = styled.p`
+  margin-bottom: 8px;
+
+  color: #121417;
+
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+`;
+export const Make = styled.span`
+  color: #3470ff;
+`;
+export const DescriptWrapper = styled.div`
+  height: 40px;
+  overflow: hidden;
+  margin-bottom: 14px;
+`;
+
+export const Description = styled.span`
+  font-style: normal;
+
+  text-align: center;
+  padding: 0 6px;
+
+  &:not(:last-child) {
+    border-right: 1px solid rgba(18, 20, 23, 0.1);
+  }
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+`;
+export const Descriptions = styled.p`
+  margin-top: 4px;
+`;
+export const Details = styled.p`
+  margin-bottom: 24px;
+
+  color: #121417;
+
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+`;
