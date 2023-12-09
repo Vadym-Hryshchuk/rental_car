@@ -1,12 +1,16 @@
 import { createAddress } from 'utils/createAddress';
 import {
+  Comfort,
+  Condition,
   DescriptWrapper,
   Description,
   Descriptions,
   Details,
   Make,
   ModalContentStyled,
+  Rental,
   Title,
+  Value,
 } from './ModalContent.styled';
 
 export const ModalContent = ({ content }) => {
@@ -32,8 +36,30 @@ export const ModalContent = ({ content }) => {
         </Descriptions>
       </DescriptWrapper>
       <Details>{content.description}</Details>
-      <p>Accessories and functionalities:</p>
-
+      <Comfort>Accessories and functionalities:</Comfort>
+      <Descriptions>
+        {content.accessories.map(text => (
+          <Description key={text}>{text}</Description>
+        ))}
+      </Descriptions>
+      <Descriptions>
+        {content.functionalities.map(text => (
+          <Description key={text}>{text}</Description>
+        ))}
+      </Descriptions>
+      <Rental>Rental Conditions:</Rental>
+      <Condition>
+        Minimum age :{' '}
+        <Value>{parseInt(content.rentalConditions.match(/\d+/))}</Value>
+      </Condition>
+      <Condition>Valid driver’s license</Condition>
+      <Condition>Security deposite required</Condition>
+      <Condition>
+        Mileage: <Value>{content.mileage}</Value>
+      </Condition>
+      <Condition>
+        Price: <Value>{content.rentalPrice}</Value>
+      </Condition>
       {/* <LearnMoreBtn
         onClick={() => {
           setIsOpen(true);
