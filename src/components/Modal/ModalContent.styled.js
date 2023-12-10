@@ -2,10 +2,10 @@ import styled from 'styled-components';
 
 export const ModalContentStyled = styled.div`
   position: relative;
-  width: 541px;
-  height: 752px;
+  max-width: 541px;
+  max-height: 752px;
   margin: 0;
-  padding: 40px;
+  /* padding: 40px; */
 
   img {
     height: 248px;
