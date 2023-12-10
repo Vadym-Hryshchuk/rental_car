@@ -68,14 +68,25 @@ export const Comfort = styled(Details)`
 export const Rental = styled(Comfort)`
   margin-top: 24px;
 `;
+export const Conditions = styled.p`
+  margin-bottom: 24px;
+`;
 export const Condition = styled.span`
   display: inline-block;
   padding: 7px 14px;
   color: #363535;
   border-radius: 35px;
   background-color: #f9f9f9;
+
   &:not(:last-child) {
     margin-right: 8px;
+  }
+
+  &:nth-child(2) {
+    margin-right: 120px;
+  }
+  &:nth-child(-n + 2) {
+    margin-bottom: 8px;
   }
 `;
 export const Value = styled.span`

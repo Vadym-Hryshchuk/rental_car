@@ -2,6 +2,7 @@ import { createAddress } from 'utils/createAddress';
 import {
   Comfort,
   Condition,
+  Conditions,
   DescriptWrapper,
   Description,
   Descriptions,
@@ -12,6 +13,7 @@ import {
   Title,
   Value,
 } from './ModalContent.styled';
+import { RentalCarBtn } from 'components/button/RentalCarBtn/RentalCarBtn';
 
 export const ModalContent = ({ content }) => {
   const city = createAddress(content, 0);
@@ -48,23 +50,19 @@ export const ModalContent = ({ content }) => {
         ))}
       </Descriptions>
       <Rental>Rental Conditions:</Rental>
-      <Condition>
-        Minimum age :{' '}
-        <Value>{parseInt(content.rentalConditions.match(/\d+/))}</Value>
-      </Condition>
-      <Condition>Valid driver’s license</Condition>
-      <Condition>Security deposite required</Condition>
-      <Condition>
-        Mileage: <Value>{content.mileage}</Value>
-      </Condition>
-      <Condition>
-        Price: <Value>{content.rentalPrice}</Value>
-      </Condition>
-      {/* <LearnMoreBtn
-        onClick={() => {
-          setIsOpen(true);
-        }}
-      />  */}
+      <Conditions>
+        {content.rentalConditions.split('\n').map(text => (
+          <Condition key={text}>{text}</Condition>
+        ))}
+
+        <Condition>
+          Mileage: <Value>{content.mileage}</Value>
+        </Condition>
+        <Condition>
+          Price: <Value>{content.rentalPrice}</Value>
+        </Condition>
+      </Conditions>
+      <RentalCarBtn />
     </ModalContentStyled>
   );
 };
