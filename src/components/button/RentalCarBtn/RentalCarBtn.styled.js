@@ -11,4 +11,8 @@ export const StyledRentalCarBtn = styled.button`
 
   font-size: 14px;
   font-weight: 600;
+
+  &:hover {
+    background: #0b44cd;
+  }
 `;

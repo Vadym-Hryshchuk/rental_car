@@ -5,7 +5,7 @@ export const ModalContentStyled = styled.div`
   max-width: 541px;
   max-height: 752px;
   margin: 0;
-  /* padding: 40px; */
+  padding: 40px;
 
   img {
     height: 248px;
@@ -13,6 +13,17 @@ export const ModalContentStyled = styled.div`
     margin-bottom: 14px;
     object-position: 30% 70%;
   }
+`;
+export const CloseBtn = styled.button`
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 24px;
+  height: 24px;
+  background: none;
+  padding: 0;
+  margin: 0;
 `;
 export const Title = styled.p`
   margin-bottom: 8px;

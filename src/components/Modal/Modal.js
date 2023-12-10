@@ -6,7 +6,6 @@ const customStyles = {
     background: 'rgba(18, 20, 23, 0.5)',
   },
   content: {
-    padding: '40px',
     top: '50%',
     left: '50%',
     right: 'auto',
