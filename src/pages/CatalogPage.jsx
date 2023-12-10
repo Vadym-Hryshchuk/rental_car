@@ -8,6 +8,7 @@ import {
   selectAdverts,
   selectIsLoading,
 } from '../redux/adverts/advertsSelectors';
+import { FilterForm } from 'components/FilterForm/FilterForm';
 
 const CatalogPage = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ const CatalogPage = () => {
   return (
     <>
       {isLoading && <Loader />}
+      <FilterForm />
       <CatalogList advertsStore={advertsStore} />
     </>
   );
