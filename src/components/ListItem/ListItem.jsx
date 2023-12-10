@@ -1,4 +1,6 @@
-import { useState } from 'react'; // Це тимчасово, потрібно видалити
+import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+
 import { LearnMoreBtn } from '../button/LearnMoreBtn/LearnMoreBtn';
 import {
   DescriptWrapper,
@@ -12,21 +14,26 @@ import { ReactComponent as Active } from '../../icons/active.svg';
 import { ReactComponent as Normal } from '../../icons/normal.svg';
 import { ModalAdverts } from 'components/Modal/Modal';
 import { ModalContent } from 'components/Modal/ModalContent';
+import { toggleAdvertFavorite } from '../../redux/favorites/favoritesSlice';
+import { selectFavorites } from '../../redux/favorites/favoritesSelectors';
 import { createAddress } from 'utils/createAddress';
 
 export const ListItem = ({ value }) => {
+  const dispatch = useDispatch();
+  const favoriteAdvarts = useSelector(selectFavorites);
   const [isOpen, setIsOpen] = useState(false);
-  const [isActive, setIsActive] = useState(false);
-  const test = e => {
-    setIsActive(isActive => !isActive);
-  };
+
   const city = createAddress(value, 0);
   const country = createAddress(value, 1);
+  const isActive = favoriteAdvarts.some(advert => advert.id === value.id);
+
   return (
     <>
       <ImageWrapper>
         <img src={value.img} alt={value.make} />
-        <button onClick={test}>{isActive ? <Active /> : <Normal />}</button>
+        <button onClick={() => dispatch(toggleAdvertFavorite(value))}>
+          {isActive ? <Active /> : <Normal />}
+        </button>
       </ImageWrapper>
       <div>
         <Title>
@@ -39,6 +46,7 @@ export const ListItem = ({ value }) => {
           <Description>{city}</Description>
           <Description>{country}</Description>
           <Description>{value.rentalCompany}</Description>
+          <Description>{value.isFavorite}</Description>
           <Descriptions>
             <Description>{value.type}</Description>
             <Description>{value.model}</Description>
@@ -59,7 +67,12 @@ export const ListItem = ({ value }) => {
           setIsOpen(false);
         }}
       >
-        <ModalContent content={value} />
+        <ModalContent
+          content={value}
+          onClose={() => {
+            setIsOpen(false);
+          }}
+        />
       </ModalAdverts>
     </>
   );

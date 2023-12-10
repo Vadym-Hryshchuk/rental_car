@@ -1,7 +1,7 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { fetchAdverts } from "./advertsOperation";
+import { createSlice } from '@reduxjs/toolkit';
+import { fetchAdverts } from './advertsOperation';
 
-const loadingAdverts = (state) => {
+const loadingAdverts = state => {
   state.isLoading = true;
 };
 const fetchingFulfilled = (state, action) => {
@@ -10,12 +10,12 @@ const fetchingFulfilled = (state, action) => {
 };
 
 const advertsSlice = createSlice({
-  name: "adverts",
+  name: 'adverts',
   initialState: {
     items: [],
     isLoading: false,
   },
-  extraReducers: (builder) => {
+  extraReducers: builder => {
     builder
       .addCase(fetchAdverts.pending, loadingAdverts)
       .addCase(fetchAdverts.fulfilled, fetchingFulfilled);

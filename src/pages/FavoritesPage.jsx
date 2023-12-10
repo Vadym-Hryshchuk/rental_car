@@ -1,9 +1,12 @@
+import { useSelector } from 'react-redux';
+
+import { selectFavorites } from '../redux/favorites/favoritesSelectors';
+import { CatalogList } from '../components/CatalogList/CatalogList';
+
 const FavoritePage = () => {
-  return (
-    <div>
-      <p>"FavoritePage"</p>
-    </div>
-  );
+  const favoritesStore = useSelector(selectFavorites);
+
+  return <CatalogList advertsStore={favoritesStore} />;
 };
 
 export default FavoritePage;

@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { configureStore } from '@reduxjs/toolkit';
 import {
   persistStore,
   persistReducer,
@@ -8,24 +8,25 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-} from "redux-persist";
+} from 'redux-persist';
 
-import storage from "redux-persist/lib/storage";
-import { advertsReduser } from "./advertsSlice";
+import storage from 'redux-persist/lib/storage';
+import { advertsReduser } from './adverts/advertsSlice';
+import { favoritesReduser } from './favorites/favoritesSlice';
 
 const advertsPersistConfig = {
-  key: "adverts",
+  key: 'favorites',
   storage,
-  whitelist: ["favorites"],
+  whitelist: ['items'],
 };
 
 export const store = configureStore({
   reducer: {
-    adverts: persistReducer(advertsPersistConfig, advertsReduser),
-    // contacts: contactsReduser,
+    favorites: persistReducer(advertsPersistConfig, favoritesReduser),
+    adverts: advertsReduser,
     // filter: filterReduser,
   },
-  middleware: (getDefaultMiddleware) =>
+  middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
