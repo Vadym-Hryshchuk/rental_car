@@ -47,7 +47,7 @@ export const FilterForm = () => {
 
       fontSize: '18px',
       fontWeight: '500',
-      lineHeight: '20px' /* 111.111% */,
+      lineHeight: '20px',
     }),
     menu: baseStyles => ({
       ...baseStyles,
