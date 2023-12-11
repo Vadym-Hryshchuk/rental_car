@@ -1,69 +1,75 @@
-// import CreatableSelect from 'react-select/creatable';
-// import { Field, Form, Formik } from 'formik';
-// export const FilterForm = () => {
-//   const options = [
-//     { value: 'option1', label: 'Option 1' },
-//     { value: 'option2', label: 'Option 2' },
-//     { value: 'option3', label: 'Option 3' },
-//   ];
-
-//   const handleSubmit = event => {
-//     event.preventDefault();
-//     console.log(event.target.value);
-//     // resetForm();
-//   };
-
-//   return (
-//     <>
-//       <form onSubmit={handleSubmit}>
-//         <label>
-//           Car brand
-//           <CreatableSelect name="car_brand" isClearable options={options} />
-//         </label>
-//         <label>
-//           Price/ 1 hour
-//           <CreatableSelect name="price" isClearable options={options} />
-//         </label>
-
-//         <button type="submit">Submit</button>
-//       </form>
-
-//     </>
-//   );
-// };
+import { useSelector } from 'react-redux';
 import { useForm, Controller } from 'react-hook-form';
-import Select from 'react-select';
+import CreatableSelect from 'react-select/creatable';
+
+import makes from 'makes.json';
+import { selectAdverts } from '../../redux/adverts/advertsSelectors';
+import { createMakesForSelect } from 'utils/createMakesForSelect';
+import { createPriceForSelect } from 'utils/createPriceForSelect';
 
 export const FilterForm = () => {
-  const { handleSubmit, control } = useForm({
-    defaultValues: {
-      selectedOption: { value: '', label: '' }, // Задайте тут бажане значення
-    },
-  });
+  const advertsStore = useSelector(selectAdverts);
+
+  const defaultValues = {
+    selectedMake: { value: '', label: '' },
+    selectedPrice: { value: '', label: '' },
+    selectFromMileage: '',
+    selectToMileage: '',
+  };
+  const { handleSubmit, control } = useForm(defaultValues);
 
   const onSubmit = data => {
-    console.log(data.selectedOption);
+    console.log(data);
     // Обробляйте дані форми тут
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <label>Select an option:</label>
-      <Controller
-        name="selectedOption"
-        control={control}
-        defaultValue={null}
-        render={({ field }) => (
-          <Select
-            {...field}
-            options={[
-              { value: 'option1', label: 'Option 1' },
-              { value: 'option2', label: 'Option 2' },
-              { value: 'option3', label: 'Option 3' },
-            ]}
-          />
-        )}
-      />
+      <label>
+        Car brand
+        <Controller
+          name="selectedMake"
+          control={control}
+          render={({ field }) => (
+            <CreatableSelect
+              isClearable
+              {...field}
+              options={createMakesForSelect(makes)}
+            />
+          )}
+        />
+      </label>
+      <label>
+        Price/ 1 hour
+        <Controller
+          name="selectedPrice"
+          control={control}
+          render={({ field }) => (
+            <CreatableSelect
+              isClearable
+              {...field}
+              options={createPriceForSelect(advertsStore)}
+            />
+          )}
+        />
+      </label>
+      <fieldset>
+        <legend>Range</legend>
+
+        <label>From:</label>
+        <Controller
+          name="selectFromMileage"
+          control={control}
+          render={({ field }) => <input {...field} />}
+        />
+
+        <label>To:</label>
+        <Controller
+          name="selectToMileage"
+          control={control}
+          render={({ field }) => <input {...field} />}
+        />
+      </fieldset>
       <button type="submit">Submit</button>
     </form>
   );
