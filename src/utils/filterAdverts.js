@@ -1,5 +1,14 @@
-export const filterAdverts = (getedAdverts, filter = {}) => {
-  if (Object.keys(filter).length === 0) {
+export const filterAdverts = (getedAdverts, filter) => {
+  if (
+    filter.selectedMake !== null &&
+    filter.selectedMake !== undefined &&
+    filter.selectedPrice !== null &&
+    filter.selectedPrice !== undefined &&
+    filter.selectFromMileage !== '' &&
+    filter.selectFromMileage !== undefined &&
+    filter.selectToMileage !== '' &&
+    filter.selectToMileage !== undefined
+  ) {
     return getedAdverts;
   }
 
@@ -17,14 +26,14 @@ export const filterAdverts = (getedAdverts, filter = {}) => {
       : filterByMake;
 
   const filterByFromMileage =
-    filter.selectFromMileage !== null && filter.selectFromMileage !== undefined
+    filter.selectFromMileage !== '' && filter.selectFromMileage !== undefined
       ? filterByPrice.filter(
           value => Number(value.mileage) >= Number(filter.selectFromMileage)
         )
       : filterByPrice;
 
   const filterByToMileage =
-    filter.selectToMileage !== null && filter.selectToMileage !== undefined
+    filter.selectToMileage !== '' && filter.selectToMileage !== undefined
       ? filterByFromMileage.filter(
           value => Number(value.mileage) <= Number(filter.selectToMileage)
         )

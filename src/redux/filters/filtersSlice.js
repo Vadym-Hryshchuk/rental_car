@@ -7,7 +7,20 @@ const filtersSlice = createSlice({
   },
   reducers: {
     addFilters(state, action) {
-      state.items = action.payload;
+      if (
+        action.payload.selectedMake !== null &&
+        action.payload.selectedMake !== undefined &&
+        action.payload.selectedPrice !== null &&
+        action.payload.selectedPrice !== undefined &&
+        action.payload.selectFromMileage !== '' &&
+        action.payload.selectFromMileage !== undefined &&
+        action.payload.selectToMileage !== '' &&
+        action.payload.selectToMileage !== undefined
+      ) {
+        state.items = {};
+      } else {
+        state.items = action.payload;
+      }
     },
   },
 });
